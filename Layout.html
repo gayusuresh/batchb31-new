@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .layout
+        {
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: 10vh 80vh 10vh;
+
+            gap:20px;
+            background-color: beige;
+            grid-template-areas: 'h h h h h'
+            'sb1 main main main sb2'
+            'f f f f f';
+        }
+        .layout div{
+            border:1px solid black;
+            background-color: rgb(236,172,172);
+            font-size:2em;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .header
+        {
+            grid-area: h;
+        }
+        .Side1
+        {
+            grid-area: sb1;
+        }
+        .main{
+            grid-area: main;
+        }
+        .Side2
+        {
+            grid-area: sb2;
+        }
+        .footer
+        {
+            grid-area: f;
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <div class="header">Header</div>
+        <div class="Side1">SideBar1</div>
+        <div class="main">Maincontent</div>
+        <div class="Side2">SideBar2</div>
+        <div class="footer">footer</div>
+
+    </div>
+</body>
+</html>

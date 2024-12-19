@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: brown;
+
+        }
+        .one
+        {
+            background-color: cadetblue;
+        }
+        .two
+        {
+            background-color: blueviolet
+        }
+        .three
+        {
+            background-color:burlywood
+        }
+        .container p{
+            width:100%;
+        }
+        @media(min-width:800px) and ( max-width:1000px)
+        {
+            .container p{
+                float: left;
+                width:30%;
+                padding:10px;
+            }
+        }
+        @media print
+        {
+            body{
+            background-color:none;
+            font-size:3em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <p class="one">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor eligendi at amet cumque repellendus eius animi dicta, delectus placeat deleniti eos, dolorem quidem quisquam perferendis consequuntur porro id ab rerum.</p>
+    <p class="two">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore ullam aliquam nobis id natus eveniet reprehenderit quam. Maiores nobis tempore beatae, impedit quidem iure aliquid, esse assumenda voluptatum voluptas corrupti?</p>
+    <p class="three">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente porro ad minima ratione? Aliquam, nobis, aliquid asperiores libero error delectus ullam accusantium rerum cupiditate fuga deserunt ex adipisci debitis voluptatum!</p>
+</div>
+</body>
+</html>
